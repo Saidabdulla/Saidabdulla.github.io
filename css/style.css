@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Raleway&family=Varela&display=swap");
+
+body {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  background-image: url("../images/4230797.jpg");
+  background-size: cover;
+  color: white;
+  font-family: Varela;
+  user-select: none;
+}
+
+#particles-js {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+#logo {
+  color: white;
+  font-size: 70px;
+  margin-left: 30px;
+  margin-top: 10px;
+  font-family: "Raleway", sans-serif;
+  opacity: 0.99999;
+  display: inline-block;
+}
+
+#logo a {
+  text-decoration: none;
+  color: white;
+}
+
+#logo a span {
+  color: #dfa937;
+}
+
+nav {
+  height: 100%;
+  width: 55px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  border-left: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+nav .navbar {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 60px;
+}
+
+.navbar li {
+  transform: rotateZ(270deg);
+  margin-bottom: 70px;
+  margin-left: -35px;
+}
+
+.navbar .contact-link {
+  margin-top: 10px;
+}
+
+.navbar li a {
+  color: white;
+  text-decoration: none;
+  font-family: Varela;
+  font-size: 20px;
+}
+
+.links {
+  margin-top: auto;
+  margin-bottom: 50px;
+}
+
+.links div {
+  text-align: right;
+  padding-right: 17px;
+  margin-top: 10px;
+}
+
+.links div a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+}
+
+.in-code {
+  color: white;
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  opacity: 0.6;
+}
