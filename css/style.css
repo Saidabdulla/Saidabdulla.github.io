@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Raleway&family=Varela&display=swap");
+@import url("https://fonts..com/css2?family=Montserrat:wght@400;700&family=Raleway&family=Varela&display=swap");
 
 body {
   height: 100%;
@@ -7,7 +7,7 @@ body {
   background-image: url("../images/4230797.jpg");
   background-size: cover;
   color: white;
-  font-family: Varela;
+  font-family: "Varela", sans-serif;
   user-select: none;
 }
 
@@ -71,7 +71,7 @@ nav .navbar {
 .navbar li a {
   color: white;
   text-decoration: none;
-  font-family: Varela;
+  font-family: "Varela", sans-serif;
   font-size: 20px;
 }
 
@@ -90,6 +90,18 @@ nav .navbar {
   text-decoration: none;
   color: white;
   font-size: 20px;
+}
+
+#name {
+  font-size: 55px;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  letter-spacing: 3px;
+  margin-top: 150px;
+}
+
+#name span {
+  color: #dfa937;
 }
 
 .in-code {
