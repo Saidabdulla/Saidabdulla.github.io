@@ -24,12 +24,10 @@
     <link rel="manifest" href="favicon_icon/site.webmanifest" />
     <link rel="stylesheet" href="icomoon/style.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/contact.css" />
   </head>
   <body>
-    <!-- particles.js container -->
-    <div id="particles-js"></div>
-
-    <section>
+    <section id="contact">
       <div id="logo">
         <a href="#"> S<span>M</span> </a>
       </div>
@@ -60,7 +58,21 @@
         </div>
       </nav>
 
-      <h2 id="name">SAIDABDULLA <span>M</span>ASHARIPOV</h2>
+      <div id="contact-form">
+        <div class="c-left-con"></div>
+        <div class="c-right-con">
+          <form>
+            <input id="fullName" type="text" placeholder="Your name" />
+            <input id="email" type="email" placeholder="Your email" />
+            <input id="subject" type="text" placeholder="Subject" />
+            <textarea
+              id="textarea"
+              placeholder="Write your message here ..."
+            ></textarea>
+            <button class="pulse">SEND MESSAGE</button>
+          </form>
+        </div>
+      </div>
 
       <div class="in-code">in code we trust;</div>
     </section>

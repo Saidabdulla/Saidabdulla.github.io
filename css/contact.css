@@ -1,0 +1,93 @@
+/* body {
+  background: unset;
+  background-image: url("../images/1767974.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+} */
+
+#contact-form {
+  width: 60%;
+  height: 500px;
+  background-color: rgba(0, 0, 0, 0.5);
+  margin: 0 auto 0 auto;
+  border-radius: 10px;
+  display: flex;
+  padding: 10px;
+  font-family: "Varela Round", sans-serif;
+}
+
+/* contact left content */
+
+.c-left-con {
+  width: 50%;
+}
+
+/* contacts right content */
+
+.c-right-con {
+  width: 50%;
+}
+
+form {
+  padding: 50px 30px 30px 0;
+}
+
+form input,
+form textarea {
+  width: calc(100% - 42px);
+  border: none;
+  margin-bottom: 20px;
+  padding: 10px 20px;
+  background: none;
+  color: white;
+  border: 1px solid white;
+  border-radius: 5px;
+  transition: 0.25s ease;
+  font-size: 16px;
+  opacity: 0.7;
+  font-family: "Varela Round", sans-serif;
+}
+
+form input::placeholder,
+form textarea::placeholder {
+  color: white;
+}
+
+form input:focus,
+form textarea:focus {
+  box-shadow: 0 0px 5px 1px rgba(255, 255, 255, 0.4);
+  opacity: 1;
+}
+
+form textarea {
+  resize: none;
+  height: 100px;
+}
+
+form button {
+  border: none;
+  padding: 10px 20px;
+  background: none;
+  color: #dfa937;
+  border: 1px solid #dfa937;
+  border-radius: 5px;
+  transition: 0.25s ease;
+  font-size: 15px;
+  cursor: pointer;
+  width: 100%;
+  font-family: "Varela Round", sans-serif;
+}
+
+form button:hover,
+form button:focus {
+  box-shadow: 0 0px 5px 1px rgba(223, 168, 55, 0.4);
+}
+
+/* shu yerda toxtadiq buguncha
+
+link: https://codepen.io/saigowthamr/pen/PowdZqy
+      https://uicookies.com/bootstrap-contact-form/
+      https://codepen.io/colewaldrip/pen/bdZVGd
+      https://preview.themeforest.net/item/yala-personal-portfolio-template/full_screen_preview/20661803?_ga=2.36350883.2021320396.1610283308-305040792.1607064555
+
+*/
