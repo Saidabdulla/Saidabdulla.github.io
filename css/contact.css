@@ -6,30 +6,57 @@
 } */
 
 #contact-form {
-  width: 60%;
-  height: 500px;
+  width: 50%;
   background-color: rgba(0, 0, 0, 0.5);
   margin: 0 auto 0 auto;
   border-radius: 10px;
   display: flex;
   padding: 10px;
   font-family: "Varela Round", sans-serif;
+  padding-bottom: 60px;
 }
 
 /* contact left content */
 
 .c-left-con {
-  width: 50%;
+  width: 40%;
+  padding: 50px 30px 0 30px;
+}
+
+.c-left-con-title{
+  font-size: 30px;
+  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 2px;
+  margin-bottom: 40px;
+}
+
+.c-left-con .c-left-row {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
+.c-left-con .c-left-row .__icon {
+  margin-right: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.c-left-con .c-left-row .__icon svg {
+  width: 30px;
+  height: 30px;
 }
 
 /* contacts right content */
 
 .c-right-con {
-  width: 50%;
+  width: 60%;
 }
 
 form {
-  padding: 50px 30px 30px 0;
+  padding: 50px 30px 0px 30px;
 }
 
 form input,
@@ -80,7 +107,14 @@ form button {
 
 form button:hover,
 form button:focus {
-  box-shadow: 0 0px 5px 1px rgba(223, 168, 55, 0.4);
+  box-shadow: 0 0px 5px 1px rgba(223, 168, 55, 0.7);
+}
+
+.telegram {
+  position: absolute;
+  color: white;
+  font-size: 20px;
+  z-index: 22;
 }
 
 /* shu yerda toxtadiq buguncha
