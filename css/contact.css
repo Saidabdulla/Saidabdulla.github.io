@@ -1,12 +1,13 @@
-/* body {
-  background: unset;
-  background-image: url("../images/1767974.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-} */
+body {
+  height: unset;
+  height: auto;
+  overflow: unset;
+  padding-bottom: 100px;
+}
 
 #contact-form {
   width: 50%;
+  max-width: 900px;
   background-color: rgba(0, 0, 0, 0.5);
   margin: 0 auto 0 auto;
   border-radius: 10px;
@@ -23,7 +24,7 @@
   padding: 50px 30px 0 30px;
 }
 
-.c-left-con-title{
+.c-left-con-title {
   font-size: 30px;
   font-weight: bold;
   font-family: "Montserrat", sans-serif;
@@ -110,11 +111,259 @@ form button:focus {
   box-shadow: 0 0px 5px 1px rgba(223, 168, 55, 0.7);
 }
 
-.telegram {
-  position: absolute;
-  color: white;
-  font-size: 20px;
-  z-index: 22;
+form textarea::-webkit-scrollbar {
+  width: 3px;
+  border-radius: 3px;
+}
+
+form textarea::-webkit-scrollbar-track {
+  box-shadow: none;
+  border-radius: 3px;
+}
+
+form textarea::-webkit-scrollbar-thumb {
+  background-color: rgb(185, 185, 185);
+  border-radius: 3px;
+}
+
+@media (max-width: 1300px) {
+  #contact-form {
+    width: 58%;
+  }
+}
+
+@media (max-width: 1100px) {
+  #contact-form {
+    width: 64%;
+  }
+}
+
+@media (max-width: 991.9px) {
+  #contact-form {
+    min-width: 500px;
+  }
+
+  /* contact left content */
+
+  .c-left-con {
+    padding: 50px 20px 0 20px;
+  }
+
+  .c-left-con-title {
+    font-size: 25px;
+    letter-spacing: 1px;
+    margin-bottom: 35px;
+  }
+
+  .c-left-con .c-left-row .__icon {
+    margin-right: 15px;
+  }
+
+  .c-left-con .c-left-row .__icon svg {
+    width: 25px;
+    height: 25px;
+  }
+
+  /* contacts right content */
+
+  form {
+    padding: 50px 20px 0px 20px;
+  }
+}
+
+@media (max-width: 767.9px) {
+  #contact-form {
+    margin-top: 30px;
+    min-width: unset;
+    width: 60%;
+    flex-direction: column;
+    padding-bottom: 50px;
+  }
+
+  /* contact left content */
+
+  .c-left-con-title {
+    font-size: 30px;
+    letter-spacing: 2px;
+  }
+
+  .c-left-con {
+    width: calc(100% - 60px);
+    padding: 40px 30px 0 30px;
+  }
+
+  .c-left-con .c-left-row .__icon {
+    margin-right: 20px;
+  }
+
+  .c-left-con .c-left-row .__icon svg {
+    width: 30px;
+    height: 30px;
+  }
+
+  /* contacts right content */
+
+  .c-right-con {
+    width: 100%;
+  }
+
+  form {
+    padding: 15px 30px 0px 30px;
+  }
+}
+
+@media (max-width: 575.9px) {
+  #contact-form {
+    width: 60%;
+    padding-bottom: 45px;
+  }
+
+  /* contact left content */
+
+  .c-left-con {
+    padding: 35px 20px 0 20px;
+  }
+
+  .c-left-con-title {
+    font-size: 25px;
+    letter-spacing: 1px;
+    margin-bottom: 35px;
+  }
+
+  .c-left-con .c-left-row .__icon {
+    margin-right: 15px;
+  }
+
+  .c-left-con .c-left-row .__icon svg {
+    width: 25px;
+    height: 25px;
+  }
+
+  /* contacts right content */
+
+  .c-right-con {
+    width: 100%;
+  }
+
+  form {
+    padding: 15px 20px 0px 20px;
+  }
+}
+
+@media (max-width: 430px) {
+  #contact-form {
+    padding-bottom: 40px;
+  }
+
+  /* contact left content */
+
+  .c-left-con {
+    padding: 25px 10px 0 10px;
+  }
+
+  .c-left-con-title {
+    font-size: 22px;
+    margin-bottom: 30px;
+  }
+
+  .c-left-con .c-left-row {
+    font-size: 15px;
+    margin-bottom: 25px;
+  }
+
+  .c-left-con .c-left-row .__icon {
+    margin-right: 15px;
+  }
+
+  .c-left-con .c-left-row .__icon svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  /* contacts right content */
+
+  .c-right-con {
+    width: 100%;
+  }
+
+  form {
+    padding: 15px 10px 0px 10px;
+  }
+
+  form input,
+  form textarea {
+    font-size: 15px;
+  }
+
+  form input::placeholder,
+  form textarea::placeholder {
+    color: white;
+    font-size: 15px;
+  }
+
+  form button {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 380px) {
+  #contact-form {
+    min-width: 230px;
+    padding-bottom: 40px;
+  }
+
+  /* contact left content */
+
+  .c-left-con {
+    padding: 25px 10px 0 10px;
+  }
+
+  .c-left-con-title {
+    font-size: 20px;
+  }
+
+  .c-left-con .c-left-row {
+    font-size: 15px;
+    margin-bottom: 22px;
+  }
+
+  .c-left-con-title {
+    margin-bottom: 25px;
+  }
+
+  .c-left-con .c-left-row .__icon {
+    margin-right: 15px;
+  }
+
+  .c-left-con .c-left-row .__icon svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  /* contacts right content */
+
+  form {
+    padding: 15px 10px 0px 10px;
+  }
+
+  form input,
+  form textarea {
+    width: calc(100% - 32px);
+    padding: 8px 15px;
+    margin-bottom: 18px;
+  }
+
+  form input::placeholder,
+  form textarea::placeholder {
+    color: white;
+    font-size: 15px;
+  }
+
+  form button {
+    padding: 8px 15px;
+    font-size: 14px;
+    margin-top: -4px;
+  }
 }
 
 /* shu yerda toxtadiq buguncha
