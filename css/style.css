@@ -99,14 +99,15 @@ nav .navbar {
 
 #name {
   font-size: 55px;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Varela round", sans-serif;
   text-align: center;
   letter-spacing: 3px;
-  margin-top: 150px;
+  margin-top: 100px;
+  margin-bottom: 0;
 }
 
-#name span {
-  color: #dfa937;
+.name2 {
+  margin-top: 0 !important;
 }
 
 .in-code {
