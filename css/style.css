@@ -61,23 +61,29 @@ nav .navbar {
   flex-direction: column;
   justify-content: center;
   padding-top: 60px;
+  margin-bottom: 10px;
 }
 
 .navbar li {
   transform: rotateZ(270deg);
   margin-bottom: 70px;
-  margin-left: -35px;
+  margin-left: -40px;
+}
+
+.navbar .projects-link {
+  margin-top: 30px;
 }
 
 .navbar .contact-link {
-  margin-top: 10px;
+  margin-top: 25px;
 }
 
 .navbar li a {
   color: white;
   text-decoration: none;
   font-family: "Varela Round", sans-serif;
-  font-size: 20px;
+  font-size: 18px;
+  text-transform: uppercase;
 }
 
 .links {
@@ -216,3 +222,15 @@ https://prashantsani.com/
 http://www.pascalvangemert.nl/#/profile
 
 */
+
+
+.rotate{
+  font-size: 30px;
+  position: absolute;
+  z-index: 11;
+  transition: 1s ease;
+}
+
+.rotate:hover{
+  transform: rotateZ(360deg);
+}
