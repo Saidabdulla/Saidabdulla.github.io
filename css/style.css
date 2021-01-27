@@ -16,6 +16,18 @@ body {
   margin: 0;
 }
 
+body::-webkit-scrollbar {
+  width: 10px;
+}
+
+body::-webkit-scrollbar-track {
+  background-color: #111111;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #505050;
+  border-radius: 5px;
+}
 #particles-js {
   position: absolute;
   top: 0;
@@ -60,8 +72,8 @@ nav .navbar {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-top: 60px;
-  margin-bottom: 10px;
+  padding-top: 76px;
+  margin-bottom: 00px;
 }
 
 .navbar li {
@@ -76,6 +88,7 @@ nav .navbar {
 
 .navbar .contact-link {
   margin-top: 25px;
+  margin-bottom: 65px;
 }
 
 .navbar li a {
@@ -84,6 +97,18 @@ nav .navbar {
   font-family: "Varela Round", sans-serif;
   font-size: 18px;
   text-transform: uppercase;
+  padding: 16px;
+  padding-bottom: 0px;
+  transition: 0.3s linear;
+  border-top: 2px solid rgba(255, 255, 255, 0);
+}
+
+.navbar li a:hover {
+  border-color: white;
+}
+
+.navbar-active-class {
+  border-color: white !important;
 }
 
 .links {
@@ -93,7 +118,7 @@ nav .navbar {
 
 .links div {
   text-align: right;
-  padding-right: 17px;
+  padding-right: 18px;
   margin-top: 10px;
 }
 
@@ -110,6 +135,22 @@ nav .navbar {
   letter-spacing: 3px;
   margin-top: 110px;
   margin-bottom: 0;
+  animation: transform-name 1s;
+  transition-delay: 0.4s;
+}
+
+@keyframes transform-name {
+  0% {
+    transform: translateY(100px);
+    animation-timing-function: ease-in-out;
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0px);
+    animation-timing-function: ease-in-out;
+    opacity: 1;
+  }
 }
 
 .name2 {
@@ -121,6 +162,8 @@ nav .navbar {
   font-size: 30px;
   text-align: center;
   color: #ffc83d;
+  animation: transform-name 1s;
+  display: none;
 }
 
 #typing span {
@@ -208,14 +251,6 @@ nav .navbar {
   }
 }
 
-.in-code {
-  color: white;
-  position: absolute;
-  bottom: 10px;
-  left: 10px;
-  opacity: 0.6;
-}
-
 /* links 
 
 https://prashantsani.com/
@@ -223,14 +258,12 @@ http://www.pascalvangemert.nl/#/profile
 
 */
 
-
-.rotate{
-  font-size: 30px;
-  position: absolute;
-  z-index: 11;
-  transition: 1s ease;
+@media (max-width: 1440px) {
+  body {
+    height: 1200px;
+    overflow-y: scroll;
+  }
 }
 
-.rotate:hover{
-  transform: rotateZ(360deg);
-}
+
+/* responsive qilishim garak */
