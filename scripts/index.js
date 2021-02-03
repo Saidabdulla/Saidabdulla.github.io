@@ -1,3 +1,5 @@
+// typed js customize
+
 setTimeout(() => {
 
   document.getElementById('typing').style.display = 'block';
@@ -20,3 +22,24 @@ setTimeout(() => {
 
     
 }, 1100);
+
+// navbar button 
+
+const menu = document.querySelector("svg");
+menu.addEventListener("click", morph);
+
+function morph() {
+  menu.classList.toggle("open");
+}
+
+
+// navbar toggle 
+
+const NavbarBtn = document.querySelector('.mobile_navbar_toggle');
+const Navbar = document.querySelector('nav');
+const NavbarLayout = document.querySelector('.navbar-layout');
+
+NavbarBtn.addEventListener('click', () => {
+  Navbar.classList.toggle('navbar-active');
+  NavbarLayout.classList.toggle('navbar-layout-style');
+})
