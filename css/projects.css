@@ -1,0 +1,30 @@
+body {
+  overflow-y: scroll;
+}
+
+#particles-js {
+  z-index: -1;
+  display: none;
+}
+
+#projects {
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.projects-card {
+  width: 45%;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+  height: auto;
+  margin-bottom: 40px;
+}
+
+.projects-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
