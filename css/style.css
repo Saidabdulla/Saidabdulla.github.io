@@ -537,12 +537,12 @@ http://www.pascalvangemert.nl/#/profile
 
 @media (max-width: 440px) {
   body {
-    min-height: 500px;
+    min-height: 400px;
     overflow-x: hidden;
   }
 
   nav {
-    min-height: 500px;
+    min-height: 400px;
     width: 100vw;
     overflow-x: hidden;
   }
