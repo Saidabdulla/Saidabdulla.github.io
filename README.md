@@ -10,6 +10,6 @@ Tasks:
 6. norm BG qoyish, hamma versionda norm durishi garak
 
 
-Back end:
+Back-end:
 <br>
 7. nodejsda emailga xat yazish
