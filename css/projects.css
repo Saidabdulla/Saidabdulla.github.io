@@ -1,30 +1,141 @@
-body {
-  overflow-y: scroll;
-}
-
-#particles-js {
-  z-index: -1;
-  display: none;
-}
-
 #projects {
-  display: flex;
-  flex-wrap: wrap;
-  width: 80%;
+  width: 100%;
   max-width: 800px;
   margin: 0 auto;
 }
 
+#carouselExampleControls {
+  width: 100%;
+}
+
+.carousel-control-prev {
+  top: -50px;
+  left: -100px;
+}
+.carousel-control-next {
+  top: -50px;
+  right: -100px;
+}
+
 .projects-card {
-  width: 45%;
-  margin-left: 2.5%;
-  margin-right: 2.5%;
+  width: 80%;
   height: auto;
-  margin-bottom: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  margin-bottom: 20px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.11), 0 2px 2px rgba(0, 0, 0, 0.11),
+    0 4px 4px rgba(0, 0, 0, 0.11), 0 6px 8px rgba(0, 0, 0, 0.11),
+    0 8px 16px rgba(0, 0, 0, 0.11);
 }
 
 .projects-card img {
   width: 100%;
   height: auto;
-  border-radius: 5px;
+}
+
+.p-card-layout {
+  width: 100%;
+  height: 99%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 101;
+  transition: 0.4s;
+  background-color: rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  display: flex;
+  align-items: flex-end;
+}
+
+.layout-footer {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  padding: 18px;
+  color: #ffc83d;
+  font-size: 20px;
+}
+
+.layout-footer .info_text {
+  transform: translateY(50px);
+  transition: 0.3s linear;
+}
+
+.projects-card:hover .info_text {
+  transform: translateY(0);
+}
+
+.projects-card:hover .p-card-layout {
+  opacity: 1;
+}
+
+.projects-card:hover .layout-footer {
+  background: linear-gradient(
+    to bottom,
+    transparent 0%,
+    rgba(0, 0, 0, 0.9) 100%
+  );
+}
+
+@media (max-width: 1199.98px) {
+  .carousel-control-prev {
+    top: 0px;
+    left: 0px;
+  }
+  .carousel-control-next {
+    top: 0px;
+    right: 0px;
+  }
+
+  .projects-card {
+    width: 70%;
+    margin-top: 40px;
+  }
+
+  .projects-card img {
+    width: 100%;
+    height: auto;
+  }
+
+  .layout-footer {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 992px) {
+  .projects-card {
+    width: 60%;
+  }
+
+  .layout-footer {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .projects-card {
+    margin-top: 50px;
+    width: 60%;
+  }
+}
+
+@media (max-width: 440px) {
+  .carousel-control-prev {
+    top: 5%;
+  }
+  .carousel-control-next {
+    top: 5%;
+  }
+
+  .carousel-control-prev-icon {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+  .carousel-control-next-icon {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
 }
