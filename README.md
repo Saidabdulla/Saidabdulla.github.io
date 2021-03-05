@@ -8,6 +8,7 @@ Tasks:
 4. navbar ni ishlatish (active/reactive)
 5. about page ni ishlatish
 6. norm BG qoyish, hamma versionda norm durishi garak
+7. Har bir device uchun alohida bg qoyaman
 
 
 Back-end:
