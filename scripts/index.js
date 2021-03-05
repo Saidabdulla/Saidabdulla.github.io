@@ -42,4 +42,4 @@ const NavbarLayout = document.querySelector('.navbar-layout');
 NavbarBtn.addEventListener('click', () => {
   Navbar.classList.toggle('navbar-active');
   NavbarLayout.classList.toggle('navbar-layout-style');
-})
+});
