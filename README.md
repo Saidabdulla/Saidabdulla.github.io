@@ -10,6 +10,7 @@ Tasks:
 4. about page ni ishlatish
 5. norm BG qoyish, hamma versionda norm durishi garak
 6. Har bir device uchun alohida bg qoyaman
+7. mail -> mailto: ....
 
 Back-end:
 <br> 7. nodejsda emailga xat yazish

@@ -1,0 +1,329 @@
+#about {
+  max-width: 760px;
+  padding: 0 70px;
+  height: 75vh;
+  margin: 0 auto;
+  overflow-y: scroll;
+  font-family: "Varela Round", sans-serif;
+  border-radius: 10px;
+}
+
+#about::-webkit-scrollbar {
+  width: 3px;
+  border-radius: 3px;
+}
+
+#about::-webkit-scrollbar-track {
+  box-shadow: none;
+  border-radius: 3px;
+}
+
+#about::-webkit-scrollbar-thumb {
+  background-color: rgb(185, 185, 185);
+  border-radius: 3px;
+}
+
+.about-title {
+  font-size: 35px;
+  text-transform: uppercase;
+  display: inline-block;
+  color: #ffc83d;
+  position: relative;
+}
+
+/* .about-title::after {
+  content: "";
+  height: 2px;
+  width: 100%;
+  position: absolute;
+  background-color: #ffc83d;
+  left: 0;
+  bottom: -5px;
+  border-radius: 2px;
+} */
+
+.about-text {
+  font-size: 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.about-text .about-box {
+  padding: 10px;
+  border: 1px solid rgb(185, 185, 185);
+  border-radius: 5px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.about-text .about-box img,
+.about-text .about-box svg {
+  width: 25px;
+  margin-left: 5px;
+}
+
+.about-text .css img,
+.about-text .javascript img {
+  width: 30px;
+  margin-left: 5px;
+}
+
+.about-text .typescript img {
+  width: 23px;
+  margin-left: 7px;
+}
+
+.about-text .bootstrap img {
+  width: 31px;
+}
+
+.about-text .figma img {
+  width: 17px;
+  border-radius: 3px;
+}
+
+.about-text .photoshop img {
+  width: 28px;
+  border-radius: 3px;
+}
+
+.about-text .angular img {
+  width: 28px;
+  border-radius: 3px;
+}
+
+.about-text .git img {
+  margin-left: 6px;
+}
+
+.about-text .express img {
+  width: 50px;
+  border-radius: 3px;
+}
+
+.about-text .php img {
+  width: 28px;
+  border-radius: 3px;
+}
+
+.about-text .mongodb img {
+  width: 30px;
+  margin-left: 0;
+}
+
+.about-text .mysql img {
+  width: 35px;
+  margin-left: 6px;
+}
+
+.git-background {
+  position: absolute;
+  width: 17px;
+  height: 17px;
+  background-color: white;
+  transform: rotate(45deg);
+  right: 14px;
+  z-index: -1;
+  top: 16px;
+  border-radius: 2px;
+}
+
+.skills {
+  margin-top: 50px;
+}
+
+.skills .about-title {
+  margin-bottom: 32px;
+}
+
+.interests {
+  margin-top: 50px;
+}
+
+.interests .interests-row {
+  display: flex;
+  margin-top: 10px;
+  justify-content: space-between;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.interests .interests-row .interests-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 25px;
+  background-color: #3d3d3d;
+  width: 230px;
+  padding: 25px 0;
+}
+
+.interests .interests-row .interests-content i {
+  color: #f1c311;
+  font-size: 45px;
+}
+
+.interests .interests-row .interests-content div {
+  font-size: 18px;
+  margin-top: 20px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+@media (max-width: 1200px) {
+  #about {
+    max-width: 740px;
+    padding: 0 70px;
+    height: 80vh;
+  }
+}
+
+@media (max-width: 992px) {
+  #about {
+    max-width: 600px;
+    padding: 0 70px;
+    height: 80vh;
+    margin-top: 20px;
+  }
+
+  .about-title {
+    font-size: 32px;
+  }
+
+  .about-text {
+    font-size: 18px;
+  }
+
+  .figma {
+    order: 1;
+  }
+
+  .git-background {
+    top: 18px;
+  }
+
+  .interests .interests-row .interests-content {
+    width: 48%;
+  }
+}
+
+@media (max-width: 768px) {
+  #about {
+    max-width: 500px;
+  }
+
+  .about-title {
+    font-size: 30px;
+  }
+
+  .about-text {
+    font-size: 18px;
+  }
+
+  .figma {
+    order: unset;
+  }
+
+  .git-background {
+    top: 14px;
+  }
+
+  .interests .interests-row .interests-content {
+    width: 48%;
+  }
+
+  .interests .interests-row .interests-content i {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 619px) {
+  .git-background {
+    top: 18px;
+    display: none;
+  }
+}
+
+@media (max-width: 576px) {
+  #about {
+    max-width: 400px;
+  }
+
+  .about-title {
+    font-size: 27px;
+  }
+
+  .about-text {
+    font-size: 16px;
+  }
+
+  .interests .interests-row .interests-content {
+    width: 48%;
+    padding: 20px 0;
+  }
+
+  .interests .interests-row .interests-content i {
+    font-size: 35px;
+  }
+
+  .interests .interests-row .interests-content div {
+    font-size: 16px;
+    margin-top: 15px;
+  }
+}
+
+@media (max-width: 440px) {
+  #about {
+    max-width: 100%;
+    padding: 0 40px;
+  }
+
+  .about-title {
+    font-size: 22px;
+  }
+
+  .about-text {
+    font-size: 16px;
+  }
+
+  .about-text .about-box {
+    padding: 7px 0;
+    border-radius: 5px;
+    margin-right: 0px;
+    margin-bottom: 7px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    border-color: rgb(185, 185, 185);
+  }
+
+  .interests .interests-row .interests-content {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 20px 0;
+  }
+
+  .interests .interests-row .interests-content i {
+    font-size: 35px;
+  }
+
+  .interests .interests-row .interests-content div {
+    font-size: 16px;
+    margin-top: 15px;
+  }
+}
+
+@media (max-width: 380px) {
+  #about {
+    max-width: 100%;
+    padding: 0 30px;
+  }
+
+  .about-title {
+    font-size: 20px;
+  }
+}
