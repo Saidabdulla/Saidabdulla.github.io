@@ -8,7 +8,8 @@ body {
   height: 100%;
   width: 100%;
   overflow: hidden;
-  background-image: url("../images/4230797.jpg");
+  background-image: url("../images/chrissa-giannakoudi-ZxCAQcWEn60-unsplash.jpg") !important;
+  background-position: center;
   background-size: cover;
   color: white;
   font-family: "Varela Round", sans-serif;

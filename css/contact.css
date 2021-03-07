@@ -2,7 +2,6 @@ body {
   height: unset;
   height: auto;
   overflow: unset;
-  padding-bottom: 100px;
 }
 
 #contact-form {
@@ -141,6 +140,7 @@ form textarea::-webkit-scrollbar-thumb {
 @media (max-width: 991.9px) {
   #contact-form {
     min-width: 500px;
+    margin-bottom: 80px;
   }
 
   /* contact left content */
