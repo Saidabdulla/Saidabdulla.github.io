@@ -60,16 +60,16 @@
 
         <ul class="navbar">
           <li>
-            <a class="navbar-child navbar-active-class" href="index.html"
-              >Home</a
-            >
+            <a class="navbar-child" href="index.html">Home</a>
           </li>
           <li><a class="navbar-child" href="about.html">About</a></li>
           <li class="projects-link">
             <a class="navbar-child" href="projects.html">Projects</a>
           </li>
           <li class="contact-link">
-            <a class="navbar-child" href="contact.html">Contact</a>
+            <a class="navbar-child navbar-active-class" href="contact.html"
+              >Contact</a
+            >
           </li>
         </ul>
 
@@ -150,15 +150,31 @@
           </div>
 
           <div class="c-right-con">
-            <form>
-              <input id="fullName" type="text" placeholder="Your name" />
-              <input id="email" type="email" placeholder="Your email" />
-              <input id="subject" type="text" placeholder="Subject" />
+            <form action="https://formspree.io/f/xaylrznq" method="POST">
+              <input
+                name="name"
+                id="fullName"
+                type="text"
+                placeholder="Your name"
+              />
+              <input
+                name="email"
+                id="email"
+                type="email"
+                placeholder="Your email"
+              />
+              <input
+                name="subject"
+                id="subject"
+                type="text"
+                placeholder="Subject"
+              />
               <textarea
+                name="message"
                 id="textarea"
                 placeholder="Write your message here ..."
               ></textarea>
-              <button class="pulse">SEND MESSAGE</button>
+              <button type="submit" class="pulse">SEND MESSAGE</button>
             </form>
           </div>
         </div>
