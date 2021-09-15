@@ -139,6 +139,11 @@
   margin-bottom: 32px;
 }
 
+.gitlab_box{
+  margin-left: 0px !important;
+  width: 40px !important;
+}
+
 .interests {
   margin-top: 50px;
 }
